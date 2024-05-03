@@ -1,0 +1,170 @@
+header {
+    font-family: "Baloo Chettan 2", cursive;
+    background: url("images/main1.webp");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover; /*đẻ ảnh thể hiện đủ*/
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex; /* để điều chỉnh các phần tử linh hoạt*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+header input:checked ~ .item {
+    right: 0;
+}
+
+.item {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: -100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.item li {
+    line-height: 40px;
+}
+
+.item li p {
+    color: goldenrod;
+    font-size: 30px;
+}
+
+header input {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    background: #efd625;
+}
+button {
+    border-radius: 10px;
+}
+input {
+    border-radius: 10px;
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    font-size: 50px;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.59);
+    width: 100%;
+}
+h1 {
+    color: black;
+    font-size: 70px;
+}
+
+table {
+    font-family: "Baloo Chettan 2", cursive;
+
+}
+
+th {
+    width: 220px;
+    font-size: 20px;
+}
+
+td {
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+}
+
+.bb {
+    background-image: url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/background-den-nham-an-tuong.jpg);
+    width: 100%; /*size của ảnh chính*/
+    height: 100vh; /*size của ảnh chính*/
+    background-position: center; /*để ảnh ở giữa*/
+    background-size: cover; /*đẻ ảnh thể hiện đủ*/
+    color: #eeea14;
+}
+
+.meme {
+    margin-right: 50px;
+}
+
+.additem {
+    border: 1px solid black;
+    width: 100%;
+    background-image: url(https://toigingiuvedep.vn/wp-content/uploads/2021/08/background-den-nham-an-tuong.jpg);
+    color: #eeea14;
+}
+
+.name {
+    font-size: 35px;
+    height: 50px;
+    color: #0272e5;
+}
+
+.add {
+    background-color: #0dd524;
+    width: 80px;
+    height: 30px;
+    margin-left: -300px;
+}
+.add1 {
+    background-color: orange;
+    width: 80px;
+    height: 30px;
+}
+.hue {
+    width: 100%;
+    padding-left: 55px;
+}
+.vietnam {
+    background-image: url('https://nghiencuuquocte.org/wp-content/uploads/2022/08/Vietnam-flag.jpg');
+    width: 100%; /*size của ảnh chính*/
+    height: 100vh; /*size của ảnh chính*/
+    background-position: center; /*để ảnh ở giữa*/
+    background-size: cover; /*đẻ ảnh thể hiện đủ*/
+    color: white;
+}
+.image-zoom {
+    overflow: hidden; /* Ẩn phần của ảnh vượt ra khỏi phần tử cha */
+}
+
+.image-zoom img {
+    transition: transform 0.5s ease; /* Áp dụng hiệu ứng chuyển động mềm mại */
+}
+
+.image-zoom:hover img {
+    transform: scale(1.2); /* Phóng to ảnh lên 120% khi di chuột qua */
+}
+.baoky {
+    overflow: hidden; /* Ẩn phần của ảnh vượt ra khỏi phần tử cha */
+}
+.baoky{
+    transition: transform 0.5s ease; /* Áp dụng hiệu ứng chuyển động mềm mại */
+}
+.baoky:hover{
+    transform: scale(1.2); /* Phóng to ảnh lên 120% khi di chuột qua */
+
+}
+
+

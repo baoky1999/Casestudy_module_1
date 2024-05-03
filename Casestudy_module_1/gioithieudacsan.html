@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gioithiudacsan.css"/>
+    <title>Trang review ẩm thực</title>
+</head>
+<body>
+<header>
+    <h2>Danh mục</h2><input type="checkbox" id="checkbox"/>
+
+    <div class="item">
+        <li id="item1"><p>Đôi chút về ẩm thực Việt Nam</p></li>
+        <li id="item2"><p>Danh sách các món ăn và địa chỉ</p></li>
+        <li id="item3"><p>Thêm món ăn</p></li>
+    </div>
+    <div>
+        <form>
+            <h1>Ẩm thực ba miền</h1>
+            <h1>Vẻ đẹp ẩm thực Việt Nam</h1>
+        </form>
+    </div>
+</header>
+<table class="vietnam" id="vietnam">
+    <tr>
+        <th class="hue">Ẩm thực là một trong những phần không thể thiếu của một nền văn hoá. Đối với văn hoá ẩm thực
+            Việt Nam cũng
+            vậy, những món ăn đều được truyền từ thế hệ này cho đến thế hệ khác. Giữ gìn phát huy những món ăn truyền
+            thống là một trong những phương pháp bảo tồn văn hoá ẩm thực Việt Nam.
+
+            Do đất nước được chia ra thành ba miền, nên ẩm thực Việt Nam từ đó cũng được chia theo vùng miền: Bắc -
+            Trung - Nam cũng tạo ra những nét đặc trưng riêng. Văn hoá ẩm thực khác nhau cũng đã góp phần tạo nên sự
+            phong phú, đa dạng trong ẩm thực Việt Nam. Mỗi một vùng miền sẽ có một khẩu vị cho vào món ăn khác nhau, các
+            chế biến, tên gọi của món ăn từ đó cũng sẽ khác.
+
+            Mỗi một lần nhắc về văn hoá ẩm thực Việt Nam thì nó lại là chủ đề luôn được thảo luận một cách sôi nổi.
+            Không chỉ dừng lại ở những món ăn, công thức chế biến và những nguyên liệu thực phẩm mà hơn hết nó còn chứa
+            đựng một nét văn hoá tự nhiên được hình thành trong cuộc sống. Những món ăn Việt Nam đều được hài hoà về màu
+            sắc cho đến hương vị khiến cho tổng thể món ăn hợp lý, tăng thêm phần hấp dẫn khó lòng cưỡng lại, đặc biệt
+            nhất là đối với những người du lịch Việt Nam.
+        </th>
+        <th class="image-zoom"><img
+                src="https://nangluongsachvietnam.vn/userfile/User/thanhtam/images/2022/6/18/am-thuc-vn-20220618192112080.jpg"/>
+        </th>
+    </tr>
+</table>
+<table class="bb" id="mienTrung">
+    <tr>
+        <th style="font-size: 40px" colspan="7">Danh sách các món ăn nổi tiếng</th>
+    </tr>
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Miền</th>
+        <th>Địa chỉ</th>
+        <th>Số điện thoại</th>
+        <th>Ảnh</th>
+    </tr>
+    <tbody id="show-food"></tbody>
+</table>
+<table class="additem" id="review">
+    <tr>
+        <th class="name" colspan="6">Thêm món ăn mới</th>
+    </tr>
+
+    <tr>
+        <th>ID</th>
+        <td><input type="number" id="id" placeholder="nhập số thứ tự"/></td>
+        <th>Tên món ăn</th>
+        <td><input style="width: 300px" type="text" id="ten" maxlength="40" placeholder="Giới hạn 40 kí tự"/></td>
+    </tr>
+    <tr>
+        <th>SĐT</th>
+        <td><input type="text" id="sdt" maxlength="11" placeholder="Nhập đúng SĐT"/></td>
+        <th>Địa chỉ quán</th>
+        <td><input style="width:500px" type="text" id="address" maxlength="80" placeholder="Giới hạn 80 kí tự"/></td>
+    </tr>
+    <tr>
+        <th>Miền</th>
+        <td><input type="text" id="mien" maxlength="15" placeholder="Giới hạn 15 kí tự"/></td>
+        <th>Ảnh</th>
+        <td><input style="width:500px" type="text" id="img" placeholder="Cung cấp Link ảnh"/></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td colspan="4">
+            <button class="add" id="add" onclick="addFood()">Add</button>
+            <button class="add1" id="save" onclick="saveFood()">Save</button>
+        </td>
+    </tr>
+</table>
+
+<script src="food.js"></script>
+<script src="showFood.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
